@@ -2,87 +2,124 @@
 <html lang="en-US">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Epstein Web</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Judson:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
-<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-<script>var __adobewebfontsappname__="dreamweaver"</script>
-<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
 <!-- Main Container -->
-<div class="container"> 
+<div class="container">
+
   <!-- Navigation -->
-  <header> <a href="">
-    <h4 class="logo">THE EPSTEIN WEB</h4>
+  <header>
+    <a href="#hero">
+      <h4 class="logo">THE EPSTEIN WEB</h4>
     </a>
     <nav>
       <ul>
         <li><a href="#hero">THE WEB</a></li>
         <li><a href="#about">INFO</a></li>
-        <li> <a href="#contact">CONTACT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- First Hero Section -->
+  <!-- Hero Section -->
   <section class="hero" id="hero">
-	<h2 class="hero_header">THE EPSTEIN WEB</h2>
+    <h2 class="hero_header">THE EPSTEIN WEB</h2>
     <p class="tagline">A COMPLEX NETWORK GRAPH</p>
   </section>
-	
-<iframe src="graph.html" width="80%" height="800px" frameborder="0" style="border: none; display: block; margin: 0 auto;"></iframe>
-	
-  <!-- Second Hero Section -->
+
+  <!-- Graph Section -->
+  <div class="graph-container">
+    <div class="graph-wrapper">
+      <iframe src="graph.html" title="Epstein Network Graph"></iframe>
+    </div>
+  </div>
+
+  <!-- How It Works Hero -->
   <section class="hero" id="hero2">
-	<h2 class="hero_header">HOW THE GRAPH WORKS</h2>
+    <h2 class="hero_header">HOW THE GRAPH WORKS</h2>
     <p class="tagline">SIMPLY</p>
   </section>
-	
+
   <!-- About Section -->
   <section class="about" id="about">
     <h2 class="hidden">About</h2>
-	<h2 class="header_column">WHAT DOES THE SIZE MEAN?</h2>
-	<h2 class="header_column">WHY ARE SOME NODES CENTRAL?</h2>
-	<h2 class="header_column">WAS EVERYONE HERE INVOLVED?</h2>
-    <p class="text_column">Larger nodes have more entries. Larger connections have more intra-document mentions. Values are shown logarithmically, meaning large nodes or bold connections have EXPONENTIALLY more datapoints.</p>
-    <p class="text_column">Nodes closer to the center have more intra-document connections, meaning they are mentioned in correlation with a wide array of other key nodes. This can usually be interpreted as central nodes being more central to Epstein’s circle.</p>
-    <p class="text_column">The presence of a person, place, or topic doesn’t explicitly imply involvement with Epstein. Nodes that are discussed often without notable allegations also appear here.</p>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3 class="header_column">WHAT DOES THE SIZE MEAN?</h3>
+        <p class="text_column">Larger nodes have more entries. Larger connections have more intra-document mentions. Values are shown logarithmically, meaning large nodes or bold connections have EXPONENTIALLY more datapoints.</p>
+      </div>
+      <div class="about-card">
+        <h3 class="header_column">WHY ARE SOME NODES CENTRAL?</h3>
+        <p class="text_column">Nodes closer to the center have more intra-document connections, meaning they are mentioned in correlation with a wide array of other key nodes. This can usually be interpreted as central nodes being more central to Epstein's circle.</p>
+      </div>
+      <div class="about-card">
+        <h3 class="header_column">WAS EVERYONE HERE INVOLVED?</h3>
+        <p class="text_column">The presence of a person, place, or topic doesn't explicitly imply involvement with Epstein. Nodes that are discussed often without notable allegations also appear here.</p>
+      </div>
+    </div>
   </section>
+
   <!-- Stats Gallery Section -->
   <div class="gallery">
     <div class="thumbnail">
-      <h1 class="stats">1.6M PDF Files&nbsp;</h1>
+      <h1 class="stats">1.6M</h1>
+      <p class="stats-label">PDF Files</p>
     </div>
     <div class="thumbnail">
-      <h1 class="stats">4.5M Datapoints&nbsp;</h1>
+      <h1 class="stats">4.5M</h1>
+      <p class="stats-label">Datapoints</p>
     </div>
     <div class="thumbnail">
-      <h1 class="stats">31K Connections&nbsp;</h1>
+      <h1 class="stats">31K</h1>
+      <p class="stats-label">Connections</p>
     </div>
     <div class="thumbnail">
-      <h1 class="stats">500 Displayed Nodes</h1>
+      <h1 class="stats">500</h1>
+      <p class="stats-label">Displayed Nodes</p>
     </div>
   </div>
+
+  <!-- Methodology Section -->
+  <section class="methodology" id="methodology">
+    <h2 class="methodology-title">HOW IT WAS MADE</h2>
+    <div class="methodology-grid">
+      <div class="method-step">
+        <span class="step-number">01</span>
+        <h3 class="step-heading">DATA COLLECTION</h3>
+        <p class="step-text">All files were downloaded from the DOJ website following the public data released related to the Epstein Files Transparency Act.</p>
+      </div>
+      <div class="method-step">
+        <span class="step-number">02</span>
+        <h3 class="step-heading">AI TERM ANALYSIS</h3>
+        <p class="step-text">AI analysis (Claude) was performed on a sample of the files to determine key search terms. Terms were monitored and cleaned until a tight margin of error was met.</p>
+      </div>
+      <div class="method-step">
+        <span class="step-number">03</span>
+        <h3 class="step-heading">CONNECTION MAPPING</h3>
+        <p class="step-text">A Python script searched each file individually to find intra-document connections &mdash; any single page that mentions two or more keywords simultaneously.</p>
+      </div>
+      <div class="method-step">
+        <span class="step-number">04</span>
+        <h3 class="step-heading">VISUALIZATION</h3>
+        <p class="step-text">The network was visualized using NetworkX and PyVis, two Python libraries specialized in graph theory and interactive network visualization.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer Section -->
   <section class="footer_banner" id="contact">
-    <h2 class="hidden">Footer Banner Section </h2>
-  	<p class="tagline">FOR ALL INQUERIES, CONTACT corvinispolitical@gmail.com</p>
-	<p class="tagline">&copy;2026 - Corvin Erdos</p>
-
-
+    <h2 class="hidden">Footer Banner Section</h2>
+    <p class="tagline">FOR ALL INQUIRIES, CONTACT corvinispolitical@gmail.com</p>
+    <p class="tagline">&copy;2026 &mdash; Corvin Erdos</p>
   </section>
-  <!-- Copyrights Section -->
 
 </div>
 <!-- Main Container Ends -->
 </body>
 </html>
-

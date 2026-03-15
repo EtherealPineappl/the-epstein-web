@@ -326,13 +326,7 @@ ul li:hover a {
 	}
 }
 
-@media (max-width: 600px) {
-	.methodology {
-		padding: 40px 20px;
-	}
-}
-
-
+@media (max-width: 900px) {
 	header {
 		padding: 0 24px;
 		height: 64px;
@@ -367,9 +361,33 @@ ul li:hover a {
 	.graph-wrapper iframe {
 		height: 560px;
 	}
+
+	.methodology {
+		padding: 56px 32px;
+	}
+
+	.methodology-grid {
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	.method-step {
+		padding: 0 0 40px 0;
+		border-right: none;
+		border-bottom: 1px solid rgba(217, 210, 201, 0.12);
+	}
+
+	.method-step:last-child {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
 }
 
 @media (max-width: 600px) {
+	.methodology {
+		padding: 40px 20px;
+	}
+
 	header {
 		flex-direction: column;
 		height: auto;

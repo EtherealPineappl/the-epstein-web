@@ -85,6 +85,33 @@
     </div>
   </div>
 
+  <!-- Methodology Section -->
+  <section class="methodology" id="methodology">
+    <h2 class="methodology-title">HOW IT WAS MADE</h2>
+    <div class="methodology-grid">
+      <div class="method-step">
+        <span class="step-number">01</span>
+        <h3 class="step-heading">DATA COLLECTION</h3>
+        <p class="step-text">All files were downloaded from the DOJ website following the public data released related to the Epstein Files Transparency Act.</p>
+      </div>
+      <div class="method-step">
+        <span class="step-number">02</span>
+        <h3 class="step-heading">AI TERM ANALYSIS</h3>
+        <p class="step-text">AI analysis (Claude) was performed on a sample of the files to determine key search terms. Terms were monitored and cleaned until a tight margin of error was met.</p>
+      </div>
+      <div class="method-step">
+        <span class="step-number">03</span>
+        <h3 class="step-heading">CONNECTION MAPPING</h3>
+        <p class="step-text">A Python script searched each file individually to find intra-document connections &mdash; any single page that mentions two or more keywords simultaneously.</p>
+      </div>
+      <div class="method-step">
+        <span class="step-number">04</span>
+        <h3 class="step-heading">VISUALIZATION</h3>
+        <p class="step-text">The network was visualized using NetworkX and PyVis, two Python libraries specialized in graph theory and interactive network visualization.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer Section -->
   <section class="footer_banner" id="contact">
     <h2 class="hidden">Footer Banner Section</h2>

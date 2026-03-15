@@ -220,6 +220,71 @@ ul li:hover a {
 	margin: 0;
 }
 
+/* ── Methodology Section ──────────────────────────────────── */
+.methodology {
+	background-color: var(--brown);
+	padding: 72px 80px;
+}
+
+.methodology-title {
+	font-family: 'Cinzel', serif;
+	color: var(--beige);
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 5px;
+	text-align: center;
+	margin: 0 0 48px 0;
+	opacity: 0.6;
+}
+
+.methodology-grid {
+	display: flex;
+	gap: 0;
+}
+
+.method-step {
+	flex: 1;
+	padding: 0 36px;
+	border-right: 1px solid rgba(217, 210, 201, 0.12);
+}
+
+.method-step:first-child {
+	padding-left: 0;
+}
+
+.method-step:last-child {
+	padding-right: 0;
+	border-right: none;
+}
+
+.step-number {
+	display: block;
+	font-family: 'Cinzel', serif;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 4px;
+	color: var(--mid-blue);
+	margin-bottom: 14px;
+	opacity: 0.7;
+}
+
+.step-heading {
+	font-family: 'Cinzel', serif;
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 3px;
+	color: var(--beige);
+	margin: 0 0 14px 0;
+}
+
+.step-text {
+	font-size: 16px;
+	line-height: 1.75;
+	color: var(--light-blue);
+	margin: 0;
+	opacity: 0.8;
+}
+
 /* ── Footer ───────────────────────────────────────────────── */
 .footer_banner {
 	background-color: var(--mid-blue);
@@ -240,6 +305,34 @@ ul li:hover a {
 
 /* ── Responsive ───────────────────────────────────────────── */
 @media (max-width: 900px) {
+	.methodology {
+		padding: 56px 32px;
+	}
+
+	.methodology-grid {
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	.method-step {
+		padding: 0 0 40px 0;
+		border-right: none;
+		border-bottom: 1px solid rgba(217, 210, 201, 0.12);
+	}
+
+	.method-step:last-child {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	.methodology {
+		padding: 40px 20px;
+	}
+}
+
+
 	header {
 		padding: 0 24px;
 		height: 64px;

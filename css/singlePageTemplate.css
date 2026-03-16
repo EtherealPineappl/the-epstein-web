@@ -298,6 +298,55 @@ ul li:hover a {
 	font-size: 13px;
 }
 
+/* ── Mobile Notice ────────────────────────────────────────── */
+.mobile-notice {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--dark-blue);
+	border-top: 2px solid var(--mid-blue);
+	padding: 20px 28px;
+	z-index: 2000;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.35);
+}
+
+.mobile-notice.visible {
+	display: flex;
+}
+
+.mobile-notice-text {
+	font-family: 'Judson', serif;
+	color: var(--light-blue);
+	font-size: 15px;
+	line-height: 1.6;
+	margin: 0;
+}
+
+.mobile-notice-close {
+	font-family: 'Cinzel', serif;
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 3px;
+	color: var(--dark-blue);
+	background-color: var(--mid-blue);
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	white-space: nowrap;
+	transition: background-color 0.25s ease, color 0.25s ease;
+	flex-shrink: 0;
+}
+
+.mobile-notice-close:hover {
+	background-color: var(--beige);
+}
+
 /* ── Utility ──────────────────────────────────────────────── */
 .hidden {
 	display: none;
